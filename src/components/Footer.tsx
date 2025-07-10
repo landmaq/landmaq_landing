@@ -79,10 +79,11 @@ const Footer = ({ onJoinWaitlist }: FooterProps) => {
             <div className="flex items-center space-x-4">
               <Link to="/">
                 <img 
-                  src="/transparent_logo.png" 
-                  alt="Landmaq logo" 
-                  className="h-8 w-auto"
-                />
+  src={`${import.meta.env.BASE_URL}transparent_logo.png`} 
+  alt="Landmaq Logo" 
+  className="h-10 md:h-12 w-auto" 
+/>
+
               </Link>
               <span className="text-gray-400">|</span>
               <p className="text-gray-400">© 2024 All rights reserved</p>
