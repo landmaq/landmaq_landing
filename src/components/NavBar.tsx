@@ -28,11 +28,12 @@ const NavBar = ({ onJoinWaitlist }: NavBarProps) => {
             {/* Logo */}
             <div className="flex-shrink-0">
               <Link to="/">
-                <img 
-                  src="/transparent_logo.png" 
-                  alt="Landmaq logo" 
-                  className="h-10 md:h-12 w-auto"
-                />
+               <img 
+  src={`${import.meta.env.BASE_URL}transparent_logo.png`} 
+  alt="Landmaq Logo" 
+  className="h-10 md:h-12 w-auto" 
+/>
+
               </Link>
             </div>
 
