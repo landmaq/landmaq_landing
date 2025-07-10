@@ -9,8 +9,8 @@ interface HeroCarouselProps {
 const slides = [
   {
     title: "Connect Buyers with Sellers",
-    subtitle: "Experience seamless real estate transactions with verified listings and trusted agents",
-    image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1973&q=80"
+    subtitle: "Discover properties tailored to your goals, with verified agents and safe payments.",
+    image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
   },
   {
     title: "Verified Agents, Trusted Listings",

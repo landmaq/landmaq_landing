@@ -1,6 +1,7 @@
 
 import React from 'react';
-import { Facebook, Youtube } from 'lucide-react';
+import { Link } from 'react-router-dom';
+import { Facebook, Youtube, Instagram } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 interface FooterProps {
@@ -16,9 +17,9 @@ const Footer = ({ onJoinWaitlist }: FooterProps) => {
           <div className="space-y-6">
             <h3 className="text-xl font-bold mb-4">Contact Us</h3>
             <div className="space-y-3 text-gray-300">
-              <p>📧 hello@landmaq.com</p>
-              <p>📞 (555) 123-4567</p>
-              <p>📍 123 Real Estate Ave<br />San Francisco, CA 94105</p>
+              <p>📧 hello@landmaq.com.ng</p>
+              <p>📞 +234 903 308 9849</p>
+              <p>📍 123 Real Estate Ave<br />Abuja</p>
             </div>
           </div>
 
@@ -26,18 +27,18 @@ const Footer = ({ onJoinWaitlist }: FooterProps) => {
           <div className="space-y-6">
             <h3 className="text-xl font-bold mb-4">About</h3>
             <div className="space-y-3">
-              <a href="#company" className="block text-gray-300 hover:text-white transition-colors">
+              <Link to="/company" className="block text-gray-300 hover:text-white transition-colors">
                 Company
-              </a>
-              <a href="#mission" className="block text-gray-300 hover:text-white transition-colors">
+              </Link>
+              <Link to="/mission" className="block text-gray-300 hover:text-white transition-colors">
                 Mission
-              </a>
-              <a href="#team" className="block text-gray-300 hover:text-white transition-colors">
+              </Link>
+              <Link to="/team" className="block text-gray-300 hover:text-white transition-colors">
                 Team
-              </a>
-              <a href="#careers" className="block text-gray-300 hover:text-white transition-colors">
+              </Link>
+              <Link to="/careers" className="block text-gray-300 hover:text-white transition-colors">
                 Careers
-              </a>
+              </Link>
             </div>
           </div>
 
@@ -60,30 +61,58 @@ const Footer = ({ onJoinWaitlist }: FooterProps) => {
         <div className="border-t border-blue-800 mt-12 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <div className="flex items-center space-x-4">
-              <h2 className="text-xl font-bold">Landmaq</h2>
+              <Link to="/">
+       
+                 <img src={`${import.meta.env.BASE_URL}transparent_logo.png`} alt="Landmaq Logo" className="h-8 w-auto"/>
+              </Link>
               <span className="text-gray-400">|</span>
               <p className="text-gray-400">© 2024 All rights reserved</p>
             </div>
             
             <div className="flex items-center space-x-6">
               <span className="text-gray-400">Follow us:</span>
-              <Facebook 
-                className="w-6 h-6 text-gray-400 hover:text-blue-400 cursor-pointer transition-colors" 
-                aria-label="Facebook" 
-              />
-              <Youtube 
-                className="w-6 h-6 text-gray-400 hover:text-red-400 cursor-pointer transition-colors" 
-                aria-label="YouTube" 
-              />
-              <div className="w-6 h-6 bg-gray-600 rounded cursor-pointer hover:bg-gray-500 transition-colors flex items-center justify-center text-xs font-bold" aria-label="TikTok">
+              <a 
+                href="https://web.facebook.com/profile.php?id=61577576081482" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                aria-label="Visit Landmaq on Facebook"
+              >
+                <Facebook className="w-6 h-6 text-gray-400 hover:text-blue-400 cursor-pointer transition-colors" />
+              </a>
+              <a 
+                href="https://www.youtube.com/@landmaq_1" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                aria-label="Visit Landmaq on YouTube"
+              >
+                <Youtube className="w-6 h-6 text-gray-400 hover:text-red-400 cursor-pointer transition-colors" />
+              </a>
+              <a 
+                href="https://www.instagram.com/landmaq_/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                aria-label="Visit Landmaq on Instagram"
+              >
+                <Instagram className="w-6 h-6 text-gray-400 hover:text-pink-400 cursor-pointer transition-colors" />
+              </a>
+              <a 
+                href="https://www.tiktok.com/@landmaq0" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                aria-label="Visit Landmaq on TikTok"
+                className="w-6 h-6 bg-gray-600 rounded cursor-pointer hover:bg-gray-500 transition-colors flex items-center justify-center text-xs font-bold"
+              >
                 T
-              </div>
-              <div className="w-6 h-6 bg-gradient-to-br from-purple-600 to-pink-600 rounded cursor-pointer hover:opacity-80 transition-opacity flex items-center justify-center text-xs font-bold" aria-label="Instagram">
-                I
-              </div>
-              <div className="w-6 h-6 bg-black rounded cursor-pointer hover:bg-gray-800 transition-colors flex items-center justify-center text-xs font-bold" aria-label="Threads">
+              </a>
+              <a 
+                href="https://www.threads.com/@landmaq_" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                aria-label="Visit Landmaq on Threads"
+                className="w-6 h-6 bg-black rounded cursor-pointer hover:bg-gray-800 transition-colors flex items-center justify-center text-xs font-bold"
+              >
                 @
-              </div>
+              </a>
             </div>
           </div>
         </div>
